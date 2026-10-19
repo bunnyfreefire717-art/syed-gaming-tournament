@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYED GAMING TOURNAMENT</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#090d18;
+ color:white;
+ text-align:center;
+}
+header{
+ background:#151c30;
+ padding:22px 10px;
+ border-bottom:2px solid #00e5ff;
+}
+h1{color:#00e5ff;font-size:25px;margin:5px}
+header p{color:#ccc}
+.hero{padding:35px 15px}
+.hero h2{font-size:28px;color:#ffd700}
+.card{
+ background:#151c30;
+ margin:15px;
+ padding:20px;
+ border-radius:14px;
+ border:1px solid #263752;
+}
+button{
+ background:#00e5ff;
+ color:#07101b;
+ padding:13px 22px;
+ border:0;
+ border-radius:8px;
+ font-size:16px;
+ font-weight:bold;
+}
+input,select{
+ width:100%;
+ padding:13px;
+ margin:8px 0;
+ border-radius:7px;
+ border:1px solid #555;
+ background:#0b1120;
+ color:white;
+}
+footer{padding:25px;color:#aaa}
+</style>
+</head>
+<body>
+<header>
+<h1>SYED GAMING</h1>
+<p>FREE FIRE TOURNAMENT</p>
+</header>
+
+<section class="hero">
+<h2>PLAY • COMPETE • WIN</h2>
+<p>Apni squad banao aur tournament ke liye taiyar ho jao!</p>
+</section>
+
+<div class="card">
+<h2>🏆 Upcoming Tournament</h2>
+<p>Game: Free Fire MAX</p>
+<p>Mode: Squad / Solo</p>
+<p>Entry Fee: Details Coming Soon</p>
+<p>Prize Pool: Details Coming Soon</p>
+<p>Match Date: Coming Soon</p>
+</div>
+
+<div class="card">
+<h2>🎮 Player Registration</h2>
+<form id="regForm">
+<input id="player" placeholder="Player Name" required>
+<input id="gameid" placeholder="Free Fire UID" required>
+<input id="phone" type="tel" placeholder="Contact Number" required>
+<select id="mode">
+<option>Squad</option>
+<option>Solo</option>
+<option>Duo</option>
+</select>
+<button type="submit">REGISTER NOW</button>
+</form>
+<p id="msg"></p>
+</div>
+
+<div class="card">
+<h2>📜 Tournament Rules</h2>
+<p>1. Sahi Player UID bharo.</p>
+<p>2. Fair Play zaroori hai.</p>
+<p>3. Match timing follow karo.</p>
+<p>4. Prize aur entry details admin confirm karega.</p>
+</div>
+
+<footer>
+<p>SYED GAMING TOURNAMENT</p>
+<p>Play Fair • Respect Everyone</p>
+</footer>
+
+<script>
+document.getElementById("regForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ document.getElementById("msg").textContent=
+ "Form demo hai. Registration abhi save nahi hua.";
+});
+</script>
+</body>
+</html>
